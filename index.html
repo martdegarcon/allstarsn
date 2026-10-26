@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>All Stars NN — концерты и спектакли</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<meta name="description" content="All Stars NN — концертная компания с 2009 года. Афиша концертов, спектаклей и шоу для детей в Нижнем Новгороде и Казани. Официальные билеты.">
+<meta name="theme-color" content="#ffffff">
+<meta property="og:type" content="website">
+<meta property="og:title" content="All Stars NN — концерты и спектакли">
+<meta property="og:description" content="Афиша концертов, спектаклей и шоу для детей в Нижнем Новгороде и Казани.">
+<meta property="og:image" content="https://static.tildacdn.com/tild3362-6265-4064-b261-626435306535/560x360-AllStars-nn.jpg">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap hrow">
+    <a href="#/" class="logo" aria-label="All Stars NN — на главную"><img data-img="logo" alt="All Stars NN" height="38"></a>
+    <div class="dd citydd" id="ddCity">
+      <button class="city" data-dd><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-6.2-7-12a7 7 0 0 1 14 0c0 5.8-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg><span id="cityName">Нижний Новгород</span><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m6 9 6 6 6-6"/></svg></button>
+      <div class="menu" id="cityMenu"></div>
+    </div>
+    <nav class="main" id="nav">
+      <div class="nd" data-g="afisha"><button class="nl" aria-haspopup="true">Афиша<svg class="cv" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m6 9 6 6 6-6"/></svg></button><div class="mega mega-af" id="megaAf"></div></div>
+      <a href="#/reports" data-r="reports" class="nl">Фотоотчёты</a>
+      <a href="#/news" data-r="news" class="nl">Новости</a>
+      <div class="nd" data-g="viewers"><button class="nl" aria-haspopup="true">Зрителям<svg class="cv" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m6 9 6 6 6-6"/></svg></button><div class="mega mega-s">
+        <a href="#/refund" data-r="refund"><b>Как вернуть билет</b><span>Сроки, проценты и порядок возврата</span></a>
+        <a href="#/faq" data-r="faq"><b>Вопросы и ответы</b><span>Возраст, электронные билеты, что нельзя проносить</span></a>
+        <a href="#/subscribe" data-r="subscribe"><b>Подписка на анонсы</b><span>Узнавайте о концертах раньше всех</span></a>
+      </div></div>
+      <div class="nd" data-g="org"><button class="nl" aria-haspopup="true">Организаторам<svg class="cv" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m6 9 6 6 6-6"/></svg></button><div class="mega mega-s">
+        <a href="#/artists" data-r="artists"><b>Организация концертов</b><span>Туры, реклама, райдер — под ключ</span></a>
+        <a href="#/about" data-r="about"><b>О компании</b><span>С 2009 года, 24 города России</span></a>
+        <a href="#/contacts" data-r="contacts"><b>Контакты</b><span>Телефон, почта и форма связи</span></a>
+      </div></div>
+    </nav>
+    <div class="hsp"></div>
+    <label class="search"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input id="q" placeholder="Артист, спектакль, площадка"></label>
+    <a href="#/subscribe" class="btn btn-line btn-sm hsub">Подписаться</a>
+    <button class="burger" id="burger" aria-label="Меню"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<div class="drawer" id="drawer"><div class="dw">
+  <div class="dw-h"><a href="#/" class="logo"><img data-img="logo" alt="All Stars NN" height="32"></a><button class="nvx" id="dwX" aria-label="Закрыть" style="position:static"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M18 6 6 18M6 6l12 12"/></svg></button></div>
+  <div class="dw-city" id="dwCity"></div>
+  <details class="dg" open><summary>Афиша<i>+</i></summary><div id="dwAf"></div></details>
+  <a class="dl" href="#/reports">Фотоотчёты</a>
+  <a class="dl" href="#/news">Новости</a>
+  <details class="dg"><summary>Зрителям<i>+</i></summary><div><a href="#/refund">Как вернуть билет</a><a href="#/faq">Вопросы и ответы</a><a href="#/subscribe">Подписка на анонсы</a></div></details>
+  <details class="dg"><summary>Организаторам<i>+</i></summary><div><a href="#/artists">Организация концертов</a><a href="#/about">О компании</a><a href="#/contacts">Контакты</a></div></details>
+  <div class="dw-f"><a href="tel:+79202944488" class="btn btn-line" style="width:100%">+7 920 294-44-88</a><a href="#/subscribe" class="btn btn-red" style="width:100%">Подписаться на анонсы</a></div>
+</div></div>
+<main id="app"></main>
+
+<footer id="footer">
+  <div class="wrap">
+    <div class="frow">
+      <div>
+        <a href="#/" class="logo"><img data-img="logo" alt="All Stars NN" height="38"></a>
+        <p class="fnote">Концертная компания с&nbsp;2009 года. Официальные билеты через Ticketscloud — электронный билет приходит на&nbsp;почту сразу после оплаты.</p>
+        <div class="soc">
+          <a href="https://vk.com/all_stars_nn" target="_blank" rel="noopener" aria-label="ВКонтакте"><span class="vk" style="width:22px;height:22px;font-size:10px">VK</span></a>
+          <a href="#/contacts" aria-label="Telegram"><svg width="18" height="18" viewBox="0 0 24 24" fill="#229ED9"><path d="M21.9 4.3 18.6 20c-.2 1-.9 1.3-1.8.8l-5-3.7-2.4 2.3c-.3.3-.5.5-1 .5l.4-5.1 9.3-8.4c.4-.4-.1-.6-.6-.2L5.9 13.4l-4.9-1.5c-1.1-.3-1.1-1.1.2-1.6L20.6 2.9c.9-.3 1.7.2 1.3 1.4z"/></svg></a>
+        </div>
+      </div>
+      <div><h4>Зрителям</h4><ul><li><a href="#/afisha">Афиша</a></li><li><a href="#/refund">Как вернуть билет</a></li><li><a href="#/faq">Вопросы и ответы</a></li><li><a href="#/subscribe">Подписка на анонсы</a></li><li><a href="#/news">Новости</a></li></ul></div>
+      <div><h4>Партнёрам</h4><ul><li><a href="#/artists">Организация концертов</a></li><li><a href="#/about">О компании</a></li><li><a href="#/reports">Фотоотчёты</a></li></ul></div>
+      <div><h4>Контакты</h4><ul><li><a href="tel:+79202944488">+7 920 294-44-88</a></li><li><a href="mailto:triballl@mail.ru">triballl@mail.ru</a></li><li><a href="#/contacts">Все контакты</a></li></ul></div>
+    </div>
+    <div class="flegal"><span>© 2009–2026 All Stars NN</span><a href="#/privacy">Политика конфиденциальности</a><a href="#/consent">Согласие на обработку персональных данных</a></div>
+  </div>
+</footer>
+
+<div class="nv" id="nv"><div class="nvw"><button class="nvx" id="nvX" aria-label="Закрыть"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M18 6 6 18M6 6l12 12"/></svg></button><div id="nvBody"></div></div></div>
+<div class="lb" id="lb"><button class="x" id="lbX" aria-label="Закрыть"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M18 6 6 18M6 6l12 12"/></svg></button><button class="arr l" id="lbL" aria-label="Назад"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="m15 18-6-6 6-6"/></svg></button><img id="lbImg" alt=""><button class="arr r" id="lbR" aria-label="Вперёд"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="m9 18 6-6-6-6"/></svg></button><div class="cnt" id="lbC"></div></div>
+<div class="docv" id="docv"><div class="docw"><button class="nvx" id="docX" aria-label="Закрыть"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M18 6 6 18M6 6l12 12"/></svg></button><div class="doc" id="docBody"></div><div style="margin-top:24px"><button class="btn btn-dark" id="docOk">Понятно</button></div></div></div>
+<div class="pp" id="pp" role="dialog" aria-modal="true" aria-labelledby="ppT"><div class="ppw">
+  <button class="nvx" id="ppX" aria-label="Закрыть"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
+  <div class="pp-img"><img class="ph" data-img="pp" alt=""><div class="pp-badge"><b>−5%</b><span>на первый билет</span></div></div>
+  <div class="pp-b">
+    <div id="ppStep1">
+      <div class="k">Подписка на анонсы</div>
+      <h3 id="ppT">Скидка 5% на&nbsp;первый билет</h3>
+      <p>Подпишитесь — пришлём промокод и будем первыми рассказывать о новых концертах в вашем городе.</p>
+      <form id="ppForm"><input type="email" required placeholder="Ваш e-mail" aria-label="E-mail">
+        <div class="consent" style="margin:12px 0 14px"><label class="cb"><input type="checkbox" required data-req><span>Согласен(на) получать рассылку с анонсами</span></label><label class="cb"><input type="checkbox" required data-req><span>Согласен(на) на <a href="#/consent" data-doc="consent">обработку персональных данных</a> и принимаю <a href="#/privacy" data-doc="privacy">политику конфиденциальности</a></span></label></div>
+        <button class="btn btn-red" type="submit" style="width:100%">Получить скидку</button></form>
+      <button class="pp-skip" id="ppSkip">Не сейчас</button>
+    </div>
+    <div id="ppStep2" style="display:none">
+      <div class="k">Готово</div>
+      <h3>Ваш промокод</h3>
+      <p>Введите его при покупке билета. Действует на первый заказ.</p>
+      <button class="pcode" id="ppCode" aria-label="Скопировать промокод"><span>ALLSTARS5</span><small>Скопировать</small></button>
+      <button class="btn btn-dark" id="ppGo" style="width:100%;margin-top:12px">Перейти в афишу</button>
+    </div>
+  </div>
+</div></div>
+<div class="toast" id="toast"></div>
+
+<script src="assets/js/app.js"></script>
+</body>
+</html>
