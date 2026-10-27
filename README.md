@@ -86,3 +86,4 @@ assets/favicon.svg
 ## Автор
 
 Дизайн и разработка — Marat Murzagaliev ([@martgarcon](https://t.me/martgarcon)).
+# allstarsn
